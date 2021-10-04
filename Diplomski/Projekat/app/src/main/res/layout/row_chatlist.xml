@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:id="@+id/imageViewUserProfilePicture5"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/ic_default_person_black" />
+
+        <ImageView
+            android:id="@+id/imageViewOnlineStatus"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/circle_offline" />
+
+        <TextView
+            android:id="@+id/textViewFirstAndLastName5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imageViewUserProfilePicture5"
+            android:layout_toRightOf="@id/imageViewUserProfilePicture5"
+            android:text="Ime + Prezime"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewLastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFirstAndLastName5"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/imageViewUserProfilePicture5"
+            android:layout_toRightOf="@id/imageViewUserProfilePicture5"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:text="Poslednja poruka" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
